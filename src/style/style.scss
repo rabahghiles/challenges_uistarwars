@@ -1,6 +1,6 @@
 $primaryColor: #FFF38A;
 $secondaryColor: #827B68;
-$backgroundColor: #73ff00;
+$backgroundColor: #060447;
 
 $primaryFont: 'Montserrat', sans-serif;
 $secondaryFont: 'gt-ultra', sans-serif;
@@ -74,8 +74,6 @@ $secondaryFont: 'gt-ultra', sans-serif;
 
   }
 
-
-  /*********** STAPPER ***********/
   .stapper {
 
     .stapper-container {
@@ -133,7 +131,6 @@ $secondaryFont: 'gt-ultra', sans-serif;
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-left: 80px;
         align-items: center;
         display: none;
 
@@ -177,4 +174,164 @@ $secondaryFont: 'gt-ultra', sans-serif;
     }
   }
 
+}
+
+
+
+@media screen and( min-width: 768px ) {
+  .sw {
+
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    .sw-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
+
+      .sw-container-1 {
+        padding-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 0px;
+        width: 100%;
+
+        .sw-container-1-texts {
+          max-width: 480px;
+
+          img {
+            width: 80px;
+            margin-bottom: 20px;
+          }
+
+          h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+
+        .sw-container-1-year {
+          font-size: 100px;
+          transform: translateY(19px);
+        }
+
+      }
+
+      .sw-container-2 {
+        width: 100%;
+        min-width: 380px;
+        max-width: 545px;
+      }
+
+
+    }
+
+    .stapper {
+
+      .stapper-container {
+        flex-direction: column-reverse;
+
+        
+        .stapper-arrows {
+          justify-content: end;
+          
+          .stapper-text {
+            opacity: 0;
+          }
+
+          .stapper-arrow {
+            width: 40px;
+          }
+
+        }
+
+        .stapper-dots {
+          display: inherit;
+          margin-bottom: 40px;
+        }
+
+      }
+    }
+
+  }
+}
+
+
+
+@media screen and( min-width: 1024px ) {
+  
+  .sw {
+
+    .sw-scontainer {
+      width: 100%;
+      max-width: 1366px;
+      margin: 0 auto;
+    }
+    
+    .sw-container {
+
+      .sw-container-1 {
+
+        .sw-container-1-texts {
+          max-width: 420px;
+
+          h1 {
+            font-size: 40px;
+          }
+
+          p {
+            font-size: 20px;
+          }
+        }
+
+        .sw-container-1-year {
+          font-size: 140px;
+          transform: translateY(27px);
+        }
+
+      }
+
+      .sw-container-2 {
+        width: 100%;
+        max-width: 430px;
+      }
+
+
+    }
+
+    .stapper {
+
+      .stapper-container {
+        flex-direction:row;
+
+        
+        .stapper-arrows {
+          justify-content: end;
+          
+          .stapper-text {
+            opacity: 0;
+          }
+
+          .stapper-arrow {
+            width: 40px;
+          }
+
+        }
+
+        .stapper-dots {
+          margin-left: 100px;
+          margin-bottom: 0px;
+        }
+
+      }
+    }
+
+  }
 }
